@@ -46,10 +46,10 @@ function bmiCalculator() {
     var bmi = Math.round(weight / (height * height));
 
     if (bmi < 18.5) {
-        $(".weight-status").html(`Your BMI is: <strong> ${bmi}</strong>. You are underweight!`)
+        $(".weight-status").html(`Your BMI is:  <strong> ${bmi}</strong>. You are underweight!`)
     }
     if (bmi >= 18.5 && bmi < 24.9) {
-        $(".weight-status").html(`Your BMI is:   <strong> ${bmi}</strong>. You weight is normal!`);
+        $(".weight-status").html("Your BMI = " + bmi + "." + "Your weight is normal!")
     }
     if (bmi >= 25) {
         $(".weight-status").html(`Your BMI is:   <strong> ${bmi}</strong>. You are overweight!`)
