@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 class="title">BMI CALCULATOR</h1>
+
+    <div class="units-container">
+        <div class="metric">
+            <input name="units" type="radio" value="Metric (kg/m)" id="metric-unit" checked></input>
+            <label for="metric">Metric (kg/m)</label>
+        </div>
+
+        <div class="imperial">
+            <input name="units" type="radio" value="Imperial (lb/ft)" id="imperial-unit"></input>
+            <label for="metric">Imperial (lb/ft)</label>
+        </div>
+    </div>
+
+    <div class="input-container">
+
+        <input class="weight" type="text" placeholder="Enter your weight in Kilograms">
+        <input class="height" type="text" placeholder="Enter your height in meters">
+
+        <input class="feet" type="text" placeholder="Enter the 'feet' part of your height" hidden>
+
+        <input class="inches" type="text" placeholder="Enter the 'inches' part of your height" hidden>
+
+        <button class="conversion">Convert</button>
+    </div>
+
+    <div class="weight-status"></div>
+
+
+
+
+
+
+
+
+
+
+    <footer>&copy; 2025 Made from Nigeria with love
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
